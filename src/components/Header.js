@@ -1,74 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "../assets/styles/Header.css";
 
 const Header = () => {
   return (
-    <header className='bg-primary text-white py-2'>
-      <nav className='container navbar navbar-expand-lg navbar-dark'>
-        <Link className='navbar-brand' to='/'>
-          My Website
-        </Link>
-        <div className='input-group flex-grow-1 mx-3'>
-          <input
-            type='text'
-            className='form-control'
-            placeholder='Search...'
-            aria-label='Search'
-            aria-describedby='button-addon2'
-          />
-          <button
-            className='btn btn-outline-light'
-            type='button'
-            id='button-addon2'>
-            Search
-          </button>
-        </div>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNav'
-          aria-controls='navbarNav'
-          aria-expanded='false'
-          aria-label='Toggle navigation'>
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <div className='collapse navbar-collapse' id='navbarNav'>
-          <ul className='navbar-nav ms-auto'>
-            <li className='nav-item'>
-              <Link className='nav-link text-white' to='/'>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link text-white' to='/menu'>
-                Menu
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link text-white' to='/contact'>
-                Contact
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link text-white' to='/about'>
-                About
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link text-white' to='/blog'>
-                Blog
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link text-white' to='/order'>
-                Order
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <Navbar expand='md' className='bg-body-tertiary' fixed='top'>
+      <Container fluid className='custom-container'>
+        <Navbar.Brand href='#home'>My website</Navbar.Brand>
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Collapse
+          collapseOnSelect
+          id='basic-navbar-nav'
+          className='justify-content-end'>
+          <Nav>
+            <Nav.Link href='/'>Home</Nav.Link>
+            <Nav.Link href='/menu'>Menu</Nav.Link>
+            <Nav.Link href='/contact'>Contact</Nav.Link>
+            <Nav.Link href='/about'>About</Nav.Link>
+            <Nav.Link href='/blog'>Blog</Nav.Link>
+            <Nav.Link href='/order'>Order</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

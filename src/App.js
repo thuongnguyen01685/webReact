@@ -11,6 +11,7 @@ import Order from "../src/pages/Order";
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import BlogDetail from "./pages/blog/BlogDetail";
+import ErrorPage from "./pages/Error";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
               <Route path='/blog' element={<Blog />} />
               <Route path='/blog/:id' element={<BlogDetail />} />
               <Route path='/order' element={<Order />} />
+              <Route path='*' element={<ErrorPage />} />
             </Routes>
           </main>
           <Footer />

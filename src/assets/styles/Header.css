@@ -1,15 +1,12 @@
-header {
-  background-color: #f8f9fa;
-  padding: 1rem 0;
+.nav-item-spacing {
+  margin-right: 20px; /* Adjust the value as needed */
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+.nav-item-spacing:last-child {
+  margin-right: 0;
 }
-
-header nav ul li a {
-  text-decoration: none;
-  color: #007bff;
+.custom-container {
+  width: 85%;
+  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  margin: 0 auto;  /* Center the container */
 }
