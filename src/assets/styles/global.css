@@ -1,0 +1,69 @@
+/* Import các file CSS riêng biệt */
+@import url('./Header.css');
+@import url('./Footer.css');
+@import url('./Home.css');
+@import url('./Menu.css');
+@import url('./Contact.css');
+@import url('./About.css');
+@import url('./Blog.css');
+@import url('./Order.css');
+
+/* Các kiểu CSS chung */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Đảm bảo main chiếm không gian còn lại */
+.container {
+  flex-grow: 1;
+}
+
+/* Import Bootstrap và các CSS khác */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css');
+
+/* Đặt lại các margin, padding, và box-sizing cho tất cả các phần tử */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Đặt các kiểu chữ mặc định */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Kiểu cho các tiêu đề */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Kiểu cho các đoạn văn */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Kiểu cho các liên kết */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Kiểu cho các container chính */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
