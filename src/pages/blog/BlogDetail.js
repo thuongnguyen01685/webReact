@@ -27,7 +27,7 @@ const BlogDetail = () => {
   );
 
   return (
-    <div className='container'>
+    <div className='container mt-5'>
       <img
         src={blogPost.image}
         className='card-img-top center'

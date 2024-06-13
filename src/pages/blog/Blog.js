@@ -14,7 +14,7 @@ const Blog = () => {
     </div>
   );
   return (
-    <div className='blog'>
+    <div className='blog mt-5'>
       <h1 className='text-start mb-4'>Blog Page</h1>
       {renderBlog}
     </div>
